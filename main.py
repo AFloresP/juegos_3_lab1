@@ -11,11 +11,12 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 # Background
-background = pygame.image.load('background.png')
+#background = pygame.image.load('background.png')
+background = pygame.image.load('space2.jpg')
 
 # Sound
-mixer.music.load("background.wav")
-mixer.music.play(-1)
+#mixer.music.load("background.wav")
+#mixer.music.play(-1)
 
 # Caption and Icon
 pygame.display.set_caption("Space Invader")
@@ -41,7 +42,7 @@ for i in range(num_of_enemies):
     enemyImg.append(pygame.image.load('enemy.png'))
     enemyX.append(random.randint(0, 736))
     enemyY.append(random.randint(50, 150))
-    enemyX_change.append(2)
+    enemyX_change.append(1.5)
     enemyY_change.append(20)
 
 # Meteoritos
